@@ -1,10 +1,38 @@
+/*==================================
+* Author        : "ThemeSine"
+* Template Name : Listrace  HTML Template
+* Version       : 1.0
+==================================== */
 
+/*==================================
+font-family: 'Roboto', sans-serif;
+==================================== */
+
+
+/*=========== TABLE OF CONTENTS ===========
+1.  General css (Reset code)
+2.  Header-top
+3.  Top-area
+4.  Welcome-hero
+5.  List-topics
+6.  Works  
+7.  Explore
+8.  Reviews
+9.  Counter
+10. Blog
+11. Subscribe
+12. Footer
+==========================================*/
+
+/*-------------------------------------
+		1.General css (Reset code)
+--------------------------------------*/
 *{
     padding: 0;
     margin: 0;
 }
 
-* {
+*{
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-o-box-sizing:border-box;
@@ -68,6 +96,7 @@ html,body{height: 100%;}
   opacity: 0;
 }
 
+/* section-header */
 .section-header{
     position: relative;
     text-align: center;
@@ -84,14 +113,21 @@ html,body{height: 100%;}
 .section-header p{
     font-size:16px;
 }
+/* section-header */
 .fix{position: relative;clear: both;}
+/*=============Style css=========*/
 
+
+/*-------------------------------------
+        2. Header-top
+--------------------------------------*/
 .header-top{border-bottom:1px solid #f6f8fa;}
 
 .header-top ul li {display: inline-block;}
 
 .header-top-left li,.header-top-right li  {display: inline-block;}
 
+/*.select-opt*/
 .select-opt,.header-top-contact{
     padding: 10px 18px;
     border-right: 1px solid #f6f8fa;
@@ -129,12 +165,16 @@ html,body{height: 100%;}
 }
 
 
+/*-------------------------------------
+        3. Top-area
+--------------------------------------*/
 nav.navbar.bootsnav {
     background-color:#fff;
     border-bottom: transparent;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked {background-color: #fff;box-shadow: 0 2px 5px rgba(0,0,0,.2);}
 
+/*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
     color: #1b1e20;
@@ -146,7 +186,9 @@ nav.navbar.bootsnav {
 .navbar-header a.navbar-brand span{display: inline-block;color:#ff545a;text-transform:capitalize;}
 
 .wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {padding:30px 0px;}
+/*.navbar-brand*/
 
+/*.nav li*/
 nav.navbar.bootsnav ul.nav > li > a {
     color: #859098;
     font-size: 14px;
@@ -170,7 +212,9 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     margin-left: 15px;
 }
 .wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a{padding:34px 21px;}
+/*.nav li*/
 
+/*.menu-ui-design*/
 .menu-ui-design{overflow-y:scroll;height: 350px;}
 .menu-ui-design::-webkit-scrollbar {
     width:5px;
@@ -181,7 +225,9 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 .menu-ui-design::-webkit-scrollbar-thumb {
   background-color: #ff545a;
 }
+/*.menu-ui-design*/
 
+/*.navbar-toggle */
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
@@ -190,7 +236,11 @@ nav.navbar.bootsnav .navbar-toggle {
     top: 0;
 }
 nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
+/*.navbar-toggle */
 
+/*-------------------------------------
+        4.  Welcome-hero
+--------------------------------------*/
 .welcome-hero {
     position: relative;
     background:url(../images/welcome-hero/banner.jpg)no-repeat;
@@ -288,6 +338,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     margin-left:  12px;
 }
 
+/*-------------------------------------
+        5. List-topuics
+--------------------------------------*/
 .list-topics-content {
     position: relative;
     top: -98px;
@@ -314,6 +367,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     transition: .3s linear;
 }
 .single-list-topics-content h2>a { margin: 13px 0;}
+/*.single-list-topics-content:last-child{margin-right: 0;}*/
 
 .single-list-topics-icon [class^="flaticon-"]:before,.single-list-topics-icon [class*=" flaticon-"]:before,.single-list-topics-icon [class^="flaticon-"]:after,.single-list-topics-icon [class*=" flaticon-"]:after {font-size: 45px;color:#343a3f;}
 .single-list-topics-content:hover .single-list-topics-icon [class^="flaticon-"]:before,.single-list-topics-content:hover .single-list-topics-icon [class*=" flaticon-"]:before,.single-list-topics-content:hover .single-list-topics-icon [class^="flaticon-"]:after,.single-list-topics-content:hover .single-list-topics-icon [class*=" flaticon-"]:after {color:#fff;}
@@ -325,6 +379,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     box-shadow: 0 5px 10px rgba(71,71,71,.4);
 }
 
+/*-------------------------------------
+        6. Works 
+--------------------------------------*/
 .works{padding: 0 0 90px;}
 .works-content {margin-top: 73px;}
 
@@ -377,7 +434,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .single-how-works:hover .welcome-hero-btn.how-work-btn{background: #fff;color: #ff545a;}
 .single-how-works:hover{box-shadow: 0 0px 10px rgba(71,71,71,.4);background: #ff545a;}
 
-
+/*-------------------------------------
+        7. Explore
+--------------------------------------*/
 .explore{
     padding:117px 0 95px;
     background: #f8fafb;
@@ -520,10 +579,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .single-explore-txt.bg-theme-2 .explore-map-icon a svg:hover{color: #00c437;}
 .single-explore-item:hover{box-shadow: 0 10px 20px rgba(21,19,19,.2);}
 
-
+/*-------------------------------------
+        8. Reviews
+--------------------------------------*/
 .reviews{padding:117px 0 75px;}
 .reviews-content {margin-top:36px;}
 
+/*single-testimonial-box */
 .single-testimonial-box  {
     padding: 50px 30px;
     box-shadow: 0 0px 5px rgba(71,71,71,.2); 
@@ -536,10 +598,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 }
 .single-testimonial-box:hover{box-shadow:0 10px 20px rgba(21,19,19,.2);}
 .slick-current .single-testimonial-box{box-shadow:0 10px 20px rgba(21,19,19,.2);}
+/*testimonial-description*/
 .single-testimonial-box{
     width: 404px;
     background:#fff;
 }
+/* testimonial-info */
 .testimonial-info {
     display: flex;
     align-items: center;
@@ -573,9 +637,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .testimonial-person-star i {
     color: #ffda2b;
     margin: 9px 4px 0 0;
-}
+}/* testimonial-info */
 
 
+/* testimonial-comment */
 .testimonial-comment {
     margin-top: 18px;
 }
@@ -583,9 +648,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     color: #8d939e;
     font-size: 14px;
     font-weight: 300;
-}
+}/* testimonial-comment */
 
 
+/*.slick-slide*/
 .slick-initialized .slick-slide {
     display: block;
     padding: 40px 0;
@@ -604,7 +670,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .slick-current {
   opacity: 1;
 }
+/*.slick-slide*/
 
+/*-------------------------------------       
+        9.  Counter
+--------------------------------------*/
 .statistics{
     position:relative;
     display: flex;
@@ -623,11 +693,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     top:0;
     left:0;
 }
+/* single-ststistics-box */
 .single-ststistics-box {
     text-align: center;
     margin-bottom:30px;
 
 }
+/* single-ststistics-box */
 .statistics-content{
     display: flex;
     justify-content: center;
@@ -644,6 +716,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     font-weight: 500;
 }
 
+/*-------------------------------------
+        10. Blog
+--------------------------------------*/
 .blog{padding:120px 0 90px;}
 .blog-content{margin-top: 80px;}
 
@@ -677,10 +752,15 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     box-shadow: 0 10px 20px rgba(21,19,19,.4);
 }
 
+
+/*-------------------------------------
+        11. Subscribe
+--------------------------------------*/
 .subscription{
     background: #f8fafb;
     padding:150px 0;
 }
+/*subscribe-title*/
  .subscribe-title {margin-bottom: 52px;}
 
 .subscribe-title h2{
@@ -693,9 +773,10 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     font-size:16px;
     font-weight: 500;
     margin-top: 28px;
-}
+}/*subscribe-title*/
 
 
+/*custom-input-group*/
 .subscription-input-group {
     position: relative;
     text-align: center;
@@ -723,7 +804,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .subscription-input-group:hover .subscription-input-form{
     box-shadow: 0 5px 20px rgba(21,19,19,.4);
 }
+/*custom-input-group*/
 
+/*appsLand-btn*/
 .appsLand-btn {
     position: absolute;
     top: 0;
@@ -756,7 +839,11 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     box-shadow:0 5px 10px rgba(71,71,71,.4);
     background: #f43032;
 }
+/*appsLand-btn*/
 
+/*-------------------------------------
+        12. Footer
+--------------------------------------*/
 .footer-menu {padding: 45px 0;}
 .footer-menu .navbar-header{padding:0;}
 .footer-menu .navbar-header a.navbar-brand,.footer-menu.footer-menu .navbar-header a.navbar-brand:hover,.footer-menu .navbar-header a.navbar-brand:focus{
@@ -814,6 +901,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
 .footer-social span:hover{color: #ff545a;}
 .footer-social a:hover {background:#ff545a;color: #fff;}
 
+/*===============================
+    Scroll Top
+===============================*/
 #scroll-Top  .return-to-top {
     position: fixed;
     right: 30px;
@@ -858,3 +948,4 @@ nav.navbar.bootsnav .navbar-toggle i{color: #ff545a;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+/*========================Thank you=================
