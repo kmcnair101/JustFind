@@ -1,24 +1,7 @@
 $(document).ready(function(){
 	"use strict";
-    
-        /*==================================
-* Author        : "ThemeSine"
-* Template Name : Listrace directory HTML Template
-* Version       : 1.0
-==================================== */
 
 
-
-
-/*=========== TABLE OF CONTENTS ===========
-1. Scroll To Top 
-2. slick carousel
-3. welcome animation support
-4. feather icon
-5. counter
-======================================*/
-
-    // 1. Scroll To Top 
 		$(window).on('scroll',function () {
 			if ($(this).scrollTop() > 600) {
 				$('.return-to-top').fadeIn();
@@ -34,7 +17,6 @@ $(document).ready(function(){
 		});
 	
 	
-	// 2. slick carousel
 
 	    $(".testimonial-carousel").slick({
 	        infinite: true,
@@ -43,7 +25,6 @@ $(document).ready(function(){
 	        slidesToShow: 5,
 	        slidesToScroll: 3,
 	        autoplaySpeed:1500,
-	        // the magic
 			responsive: [
 				{
 
@@ -82,10 +63,6 @@ $(document).ready(function(){
 			]
 	    });
 
-
-
-    // 3. welcome animation support
-
         $(window).load(function(){
         	$(".welcome-hero-txt h2,.welcome-hero-txt p").removeClass("animated fadeInUp").css({'opacity':'0'});
             $(".welcome-hero-serch-box").removeClass("animated fadeInDown").css({'opacity':'0'});
@@ -96,11 +73,8 @@ $(document).ready(function(){
             $(".welcome-hero-serch-box").addClass("animated fadeInDown").css({'opacity':'0'});
         });
 
-	// 4. feather icon
-
 		feather.replace();
 
-	// 5. counter
 		$(window).on('load', function(){	
 			$('.counter').counterUp({
 				delay: 10,
